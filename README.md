@@ -9,7 +9,7 @@ In this project, you will train a deep neural network to identify and track a ta
 ## Setup Instructions
 **Clone the repository**
 ```
-$ git clone https://github.com/udacity/RoboND-DeepLearning.git
+$ git clone https://github.com/mahajanrevant/Deep-Learning-Follow-me
 ```
 
 **Download the data**
@@ -47,7 +47,7 @@ If for some reason you choose not to use Anaconda, you must install the followin
 * PyQt4/Pyqt5
 
 ## Introduction
-The goal of this project is to create a FCN to guid the drone to follow the target of interest- a lady. The FCN is created using Keras and Tensorflow in jupyter Notebooks. To speed up training, it is performed over AWS using a custom AMI on a p2.xlarge instance. Aditional data can be collected from the Unity Simulator but is not required for the accuracy goal. The FCN should have a minimum output of *__0.45__*
+The goal of this project is to create a FCN to guid the drone to follow the target of interest- a lady. The FCN is created using Keras and Tensorflow in jupyter Notebooks. To speed up training, it is performed over AWS using a custom AMI on a p2.xlarge instance. Aditional data can be collected from the Unity Simulator but is not required for the accuracy goal. The FCN should have a minimum score of *__0.45__*
 
 
 ## Network Architecture
