@@ -108,6 +108,7 @@ The validation score obtained was __0.453975601959__ which is the required goal.
 
 ## Improvements 
 
+* Real life implementation of this project can be done
 * More data needs to be collected to improve the score
 * Addig more layers to the FCN will also increase the accuracy.
 * Inception module should be deployed to get a better score.
