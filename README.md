@@ -46,7 +46,7 @@ If for some reason you choose not to use Anaconda, you must install the followin
 ## Contents
 * [Introduction](#introduction)
 * [Network Architecture](#network-architecture)
-* [Hyper Paramters](#hyper-paramteres)
+* [Hyper Paramters](#hyper-paramters)
 * [Tuning](#tuning)
 * [Results](#results)
 * [Improvements](#improvements)
