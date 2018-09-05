@@ -1,10 +1,7 @@
 ## Deep Learning Project ##
 ---
 
-In this project, you will train a deep neural network to identify and track a target in simulation. So-called “follow me” applications like this are key to many fields of robotics and the very same techniques you apply here could be extended to scenarios like advanced cruise control in autonomous vehicles or human-robot collaboration in industry.
-
-[image_0]: ./docs/misc/sim_screenshot.png
-![alt text][image_0] 
+![following](https://github.com/mahajanrevant/Deep-Learning-Follow-me/blob/master/RoboND-DeepLearning-Project/docs/misc/following.png)
 
 ## Setup Instructions
 **Clone the repository**
@@ -93,13 +90,19 @@ The following values for the above mentioned hyper parameters were used:-
 * steps_per_epoch = int(4131/batch_size)-1
 * validation_steps = int(1000/batch_size)-1
 
+![epoch1](https://github.com/mahajanrevant/Deep-Learning-Follow-me/blob/master/RoboND-DeepLearning-Project/docs/misc/epoch1.PNG)
 
+![epoch2](https://github.com/mahajanrevant/Deep-Learning-Follow-me/blob/master/RoboND-DeepLearning-Project/docs/misc/epoch2.PNG)
 
 The recommended learning rate was used to train this model. The idea was to train with a small batch size but multiple times. This is why batch size was 30 while the number of epochs was 110. Previously tried values for the num_epochs were 70,90. The training error starts to diverge around epoch number 120. Although the validation error starts diverging from the training error at around epoch number 30, this was no the case for all tries. Also, validation error stays about the same, although oscillating.Further accuracy could have been gained by using a bigger batch_size. 
 
 ## Results
 
+### With Object of Interest
+![patrol](https://github.com/mahajanrevant/Deep-Learning-Follow-me/blob/master/RoboND-DeepLearning-Project/docs/misc/target.PNG)
 
+### Without Object of Interest
+![no patrol](https://github.com/mahajanrevant/Deep-Learning-Follow-me/blob/master/RoboND-DeepLearning-Project/docs/misc/no target.PNG)
 
 The validation score obtained was __0.453975601959__ which is the required goal.
 
