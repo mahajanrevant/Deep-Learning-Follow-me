@@ -46,11 +46,9 @@ If for some reason you choose not to use Anaconda, you must install the followin
 * transforms3d
 * PyQt4/Pyqt5
 
-## Implementation of the Project
+## Introduction
+The goal of this project is to create a FCN to guid the drone to follow the target of interest- a lady. The FCN is created using Keras and Tensorflow in jupyter Notebooks. To speed up training, it is performed over AWS using a custom AMI on a p2.xlarge instance. Aditional data can be collected from the Unity Simulator but is not required for the accuracy goal. The FCN should have a minimum output of *__0.45__*
 
-1. Implemented the solution in model_training.ipynb using Keras
-2. Trained the network on AWS
-3. Continued to experiment with the training data and network until attained a score of *__0.4__*.
 
 ## Network Architecture
 
@@ -103,7 +101,12 @@ The recommended learning rate was used to train this model. The idea was to trai
 
 
 
-The validation score obtained was __0.453975601959__ which is above the required goal.
+The validation score obtained was __0.453975601959__ which is the required goal.
 
 ## Improvements 
+
+* More data needs to be collected to improve the score
+* Addig more layers to the FCN will also increase the accuracy.
+* Inception module should be deployed to get a better score.
+* Can be used to track other objects, but will have to be retrained. Also, this case could use transfer learning.
 
