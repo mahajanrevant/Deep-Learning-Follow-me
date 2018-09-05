@@ -60,7 +60,7 @@ As mentioned above, Convoltional Neural Networks(__CNN__) are suitable to the ta
 Input Layer (160, 160, 3)-----
 Encoder 1 (80, 80, 32)------ |
 Encoder 2 (40, 40, 64) --- | |
-Encoder 3 (20, 20, 128)  | | |  __Skip Connections__
+Encoder 3 (20, 20, 128)  | | |  Skip Connections
 1x1 Conv (20, 20, 128)   | | |
 Decoder 1 (40, 40, 128)--- | |
 Decoder 2 (80, 80, 64)------ |
