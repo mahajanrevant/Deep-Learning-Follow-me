@@ -104,6 +104,16 @@ The recommended learning rate was used to train this model. The idea was to trai
 ### Without Object of Interest
 ![no patrol](https://github.com/mahajanrevant/Deep-Learning-Follow-me/blob/master/RoboND-DeepLearning-Project/docs/misc/no_target.PNG)
 
+### Scores for while the quad is following behind the target.
+number true positives: 539, number false positives: 0, number false negatives: 0
+
+### Scores for images while the quad is on patrol and the target is not visable
+number true positives: 0, number false positives: 42, number false negatives: 0
+
+### This score measures how well the neural network can detect the target from far away
+number true positives: 137, number false positives: 2, number false negatives: 164
+
+### Final Score
 The validation score obtained was __0.453975601959__ which is the required goal.
 
 ## Improvements 
