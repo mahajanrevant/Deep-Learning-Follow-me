@@ -102,7 +102,7 @@ The recommended learning rate was used to train this model. The idea was to trai
 ![patrol](https://github.com/mahajanrevant/Deep-Learning-Follow-me/blob/master/RoboND-DeepLearning-Project/docs/misc/target.PNG)
 
 ### Without Object of Interest
-![no patrol](https://github.com/mahajanrevant/Deep-Learning-Follow-me/blob/master/RoboND-DeepLearning-Project/docs/misc/no target.PNG)
+![no patrol](https://github.com/mahajanrevant/Deep-Learning-Follow-me/blob/master/RoboND-DeepLearning-Project/docs/misc/no_target.PNG)
 
 The validation score obtained was __0.453975601959__ which is the required goal.
 
