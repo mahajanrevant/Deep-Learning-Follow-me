@@ -56,7 +56,7 @@ If for some reason you choose not to use Anaconda, you must install the followin
 
 As mentioned above, Convoltional Neural Networks(__CNN__) are suitable to the task of the image detection. Although they can only tell if a particular object in the image is the desired object or not. Modifying CNN a little bit, we can get a Fully COnvolutional Network(__FCN__). FCN performs exceptionally well at the task of _Semantic Segmentation_. FCN is used in this project to achieve the desired goal. The following Architecture is used and explained below:-
 
-
+```
 Input Layer (160, 160, 3)-----
 Encoder 1 (80, 80, 32)------ |
 Encoder 2 (40, 40, 64) --- | |
@@ -66,7 +66,7 @@ Decoder 1 (40, 40, 128)--- | |
 Decoder 2 (80, 80, 64)------ |
 Decoder 3 (80, 80, 64)--------
 Output Layer (160, 160, 3)
-
+```
 
 The input layer is the size of the input images to be used as the training and usage data. The FCN comprises of three parts- Encoder block, 1X1 Convolution layer, Decoder block.
 Each encoder block is made up of bunch of convolutional layers and its job is to identify features. Below is an example of how this happens:-
