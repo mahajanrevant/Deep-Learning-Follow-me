@@ -114,7 +114,7 @@ number true positives: 0, number false positives: 42, number false negatives: 0
 number true positives: 137, number false positives: 2, number false negatives: 164
 
 ### Final Score
-The validation score obtained was __0.453975601959__ which is the required goal.
+The validation score obtained was __0.453975601959__ which is greater than the required score.
 
 ## Improvements 
 
