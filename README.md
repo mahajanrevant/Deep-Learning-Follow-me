@@ -43,6 +43,14 @@ If for some reason you choose not to use Anaconda, you must install the followin
 * transforms3d
 * PyQt4/Pyqt5
 
+## Contents
+* [Introduction](#introduction)
+* [Network Architecture](#network-architecture)
+* [Hyper Paramters](#hyper-paramteres)
+* [Tuning](#tuning)
+* [Results](#results)
+* [Improvements](#improvements)
+
 ## Introduction
 The goal of this project is to create a FCN to guid the drone to follow the target of interest- a lady. The FCN is created using Keras and Tensorflow in jupyter Notebooks. To speed up training, it is performed over AWS using a custom AMI on a p2.xlarge instance. Aditional data can be collected from the Unity Simulator but is not required for the accuracy goal. The FCN should have a minimum score of *__0.45__*
 
@@ -72,7 +80,7 @@ The Decoder blocks upscale the output of the Encoder blocks to the orignal size 
 
 SKip connectins are way of retaining information about the input by using multiple no adjacent layers to make the decisions. As we go deep in the FCN, the focus is more on features rather than the image as a whole. Despite upsampling, not all information is obtained. To improve this, skip connections are implemented.
 
-## Hyper Paramteres
+## Hyper Paramters
 
 * batch_size: number of training samples/images that get propagated through the network in a single pass.
 * num_epochs: number of times the entire training dataset gets propagated through the network.
