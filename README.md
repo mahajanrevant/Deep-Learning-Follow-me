@@ -81,6 +81,29 @@ SKip connectins are way of retaining information about the input by using multip
 
 * batch_size: number of training samples/images that get propagated through the network in a single pass.
 * num_epochs: number of times the entire training dataset gets propagated through the network.
-* steps_per_epoch: number of batches of training images that go through the network in 1 epoch. We have provided you with a default     value. One recommended value to try would be based on the total number of images in training dataset divided by the batch_size.
+* steps_per_epoch: number of batches of training images that go through the network in 1 epoch.Recommended value to try would be based on the total number of images in training dataset divided by the batch_size.
 * validation_steps: number of batches of validation images that go through the network in 1 epoch. This is similar to steps_per_epoch, except validation_steps is for the validation dataset. We have provided you with a default value for this as well.
 * workers: maximum number of processes to spin up. This can affect your training speed and is dependent on your hardware. We have provided a recommended value to work with.
+
+## Tuning
+
+The following values for the above mentioned hyper parameters were used:-
+
+* learning_rate = 0.01
+* batch_size = 40
+* num_epochs = 110
+* steps_per_epoch = int(4131/batch_size)-1
+* validation_steps = int(1000/batch_size)-1
+
+
+
+The recommended learning rate was used to train this model. The idea was to train with a small batch size but multiple times. This is why batch size was 30 while the number of epochs was 110. Previously tried values for the num_epochs were 70,90. The training error starts to diverge around epoch number 120. Although the validation error starts diverging from the training error at around epoch number 30, this was no the case for all tries. Also, validation error stays about the same, although oscillating.Further accuracy could have been gained by using a bigger batch_size. 
+
+## Results
+
+
+
+The validation score obtained was __0.453975601959__ which is above the required goal.
+
+## Improvements 
+
