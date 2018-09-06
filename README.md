@@ -82,11 +82,11 @@ SKip connectins are way of retaining information about the input by using multip
 
 ## Hyper Paramters
 
-* batch_size: number of training samples/images that get propagated through the network in a single pass.
-* num_epochs: number of times the entire training dataset gets propagated through the network.
-* steps_per_epoch: number of batches of training images that go through the network in 1 epoch.Recommended value to try would be based on the total number of images in training dataset divided by the batch_size.
-* validation_steps: number of batches of validation images that go through the network in 1 epoch. This is similar to steps_per_epoch, except validation_steps is for the validation dataset. We have provided you with a default value for this as well.
-* workers: maximum number of processes to spin up. This can affect your training speed and is dependent on your hardware. We have provided a recommended value to work with.
+* learning_rate: The paramter dictates how much influence does a change have on the current weights of the networks while training. A higher learning rate will lead to big changes in weights while lower learning rate ensures steady changes.
+* batch_size: A data set is usually divided in a equal collection called mini-batches in order to save storage memory while training. These batches are fed to the network to train it.  The size of batches is defined by this parameter..
+* num_epochs: An epoch is a single forward and backward pass of the whole dataset. This is used to increase the accuracy of the model without requiring more data.
+* steps_per_epoch: The number of batch iterations before a training epoch is considered finished.If not defined, trains on all the batches and makes training more compute intensive 
+* validation_steps: This is similar to steps_per_epoch. It is the number of batch iterations before a validation epoch is considered finished.
 
 ## Tuning
 
